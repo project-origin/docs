@@ -1,0 +1,19 @@
+name: Verifies PR are ready for merge
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  verify-docfx-build:
+    runs-on: ubuntu-latest
+    name: Test docfx build
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install docfx
+        run: dotnet tool install --global docfx --version 2.71.0
+
+      - name: Build Documentation
+        run: docfx build ./doc/docfx.json

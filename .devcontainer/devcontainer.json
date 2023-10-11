@@ -1,0 +1,19 @@
+{
+    "name": "C# (.NET)",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "EditorConfig.EditorConfig",
+                "bierner.markdown-footnotes",
+                "bierner.markdown-mermaid"
+            ],
+            "settings": {
+                "editor.formatOnSave": true
+            }
+        }
+    },
+    "remoteUser": "vscode"
+}
