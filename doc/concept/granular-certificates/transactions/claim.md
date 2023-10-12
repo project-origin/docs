@@ -1,4 +1,4 @@
-# Claim command
+# Claim transaction
 
 The claim command is where a production and consumption certificate "cancel" each other out.
 
@@ -85,7 +85,3 @@ sequenceDiagram
     cons ->> user: ClaimCommand Success
     deactivate cons
 ```
-
-## How to
-
-Look at the CommandBuilder for how to perform the [ClaimCommand](xref:ProjectOrigin.Electricity.Client.ElectricityCommandBuilder.ClaimCertificate(ProjectOrigin.Electricity.Client.Models.ShieldedValue,ProjectOrigin.Electricity.Client.Models.FederatedCertifcateId,ProjectOrigin.Electricity.Client.Models.ShieldedValue,Key,ProjectOrigin.Electricity.Client.Models.FederatedCertifcateId,ProjectOrigin.Electricity.Client.Models.ShieldedValue,Key))

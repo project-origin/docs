@@ -6,7 +6,7 @@ uid: granular_certificate
 
 **Granular Certificate** is a term defined by the [EnergyTag Organization](https://energytag.org).
 
-It is a goal for the **Project-Origin Registry** to be **Compliant with the EnergyTag Standard**
+It is a goal for the **Project-Origin** to be **Compliant with the EnergyTag Standard**
 
 ## Description
 
@@ -17,20 +17,17 @@ In Project-Origin, a Granular Certificate (GC) can describe either a **productio
 
 A GC consists of two parts:
 
-- A immutable "header" which is the [collection of attributes](attributes.md)
-  on the GC. These data **cannot be changed** after the GC has been issued.
-
+- A immutable "header" which is the [collection of attributes](attributes.md) on the GC.
+  These data **cannot be changed** after the GC has been issued.
   These attributes describe all the properties on the GC,
   like the [grid area](attributes.md#grid-area),
-  [period](attributes.md#period)
-  and which [meter](attributes.md#gsrn) the GC originates from.
+  [time period](attributes.md#period)
+  or which [asset](attributes.md#AssetId) the GC originates from.
 
-- A collection of [slices](#slices), when a GC is [issued](commands/issue.md),
+- A collection of [slices](#slices), when a GC is [issued](transactions/issue.md),
   it is created with 1 initial slice.
-
   An active slice contains two values, the **quantity** of the slice, and the **owner's public-key**.
-
-  All commands on an existing GC and the life-cycle happens through the slices.
+  All transactions on an existing GC and the life-cycle happens through the slices.
 
 ![Sketch of the GCs two parts.](gc.drawio.svg)
 
@@ -64,16 +61,17 @@ A slice has a specific life-cycle. When the slice is created, it becomes **activ
 
 When a slice changes state, the state is stored on the slice as an event.
 
-Note that most commands are final, in there is no way to reverse them once performed.
+Note that most transactions are final, in there is no way to reverse them once performed.
 
 ```mermaid
 stateDiagram-v2
     [*] --> Active
-    Active --> Active: Transfer command
-    Active --> Claimed: Claim command
-    Active --> Removed: Slice command
-    Active --> Withdrawn: Withdraw command
-    Active --> Expired: Expires automatically
+    Active --> Removed: Slice
+    Active --> Active: Transfer
+    Active --> Allocated: Allocate
+    Allocated --> Claimed: Claim
+    Active --> Withdrawn: Withdraw
+    Active --> Expired: Expire (automatically)
 
     note right of Removed
         Removed slices are <b>not</b>
@@ -88,9 +86,9 @@ stateDiagram-v2
     end note
 ```
 
-- [Issue command](commands/issue.md): Used by an **Issuing Body** to issue a new GC.
-- [Transfer command](commands/transfer.md): Transfers the ownership of an existing slice to a new owner.
-- [Slice command](commands/slice.md): Enables the owner to create any number of new slices from and exsting slice.
-- [Claim command](commands/claim.md): Claim a production slice to a consumption slice of same quantity.
-- [Withdraw](commands/withdraw.md): Withdraw a GC.
-- [Expire](commands/expire.md): Expires old slices.
+- [Issue command](transactions/issue.md): Used by an **Issuing Body** to issue a new GC.
+- [Transfer command](transactions/transfer.md): Transfers the ownership of an existing slice to a new owner.
+- [Slice command](transactions/slice.md): Enables the owner to create any number of new slices from and exsting slice.
+- [Claim command](transactions/claim.md): Claim a production slice to a consumption slice of same quantity.
+- [Withdraw](transactions/withdraw.md): Withdraw a GC.
+- [Expire](transactions/expire.md): Expires old slices.

@@ -30,7 +30,7 @@ jobs:
         run: dotnet tool install --global docfx --version 2.71.0
 
       - name: Build Documentation
-        run: docfx build ./doc/docfx.json
+        run: make build
 
       - name: Setup Pages
         uses: actions/configure-pages@v2

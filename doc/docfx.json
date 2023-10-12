@@ -1,41 +1,72 @@
 {
-    "build": {
-        "content": [
-            {
-                "files": [
-                    "**/*.md",
-                    "toc.yml",
-                    "**/toc.yml"
-                ]
-            }
-        ],
-        "resource": [
-            {
-                "files": [
-                    "**/*.svg",
-                    "logo.png"
-                ]
-            }
-        ],
-        "overwrite": "api-overrides/*.md",
-        "globalMetadata": {
-            "_appTitle": "Project Origin",
-            "_enableSearch": true
-        },
-        "template": [
-            "default",
-            "modern"
-        ],
-        "markdownEngineName": "markdig",
-        "markdownEngineProperties": {
-            "markdigExtensions": [
-                "mathematics",
-                "footnotes"
-            ]
-        },
-        "dest": "_site",
-        "xrefService": [
-            "https://xref.docs.microsoft.com/query?uid={uid}"
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "toc.yml",
+          "**/toc.yml"
         ]
-    }
+      },
+      {
+        "src": "../submodules/registry/doc",
+        "dest": "registry",
+        "files": [
+          "**/*.md",
+          "**/toc.yml"
+        ]
+      },
+      {
+        "src": "../submodules/wallet/doc",
+        "dest": "wallet",
+        "files": [
+          "**/*.md",
+          "**/toc.yml"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.{svg|png}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      },
+      {
+        "src": "../submodules/registry/doc",
+        "dest": "registry",
+        "files": [
+          "**/*.{svg|png}"
+        ]
+      },
+      {
+        "src": "../submodules/wallet/doc",
+        "dest": "wallet",
+        "files": [
+          "**/*.{svg|png}"
+        ]
+      }
+    ],
+    "globalMetadata": {
+      "_appTitle": "Project Origin",
+      "_enableSearch": true
+    },
+    "template": [
+      "default",
+      "modern"
+    ],
+    "markdownEngineName": "markdig",
+    "markdownEngineProperties": {
+      "markdigExtensions": [
+        "mathematics",
+        "footnotes"
+      ]
+    },
+    "dest": "./_site",
+    "xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ]
+  }
 }
