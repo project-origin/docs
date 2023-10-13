@@ -17,6 +17,9 @@ jobs:
       - name: list files
         run: ls -la -R ./doc
 
+      - name: list files in submodules
+        run:  ls -la -R ./submodules/*/doc
+
       - name: Install docfx
         run: dotnet tool install --global docfx --version 2.71.0
 
