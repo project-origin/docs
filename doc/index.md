@@ -10,11 +10,6 @@ Project-Origin is a Open Source project to create a **federated solution** to ha
 
 To get a better understanding of the concepts and terminology used in the project, please read the [concepts section](concept/overview.md).
 
-## Technical Overview
-
-To get a deeper understanding of the technical implementations and aspects of the project, please read the [technical section](architecture/overview.md),
-this expects one to have read the [concepts section](concept/overview.md).
-
 ## Work in Progress
 
 Documentation and everything else is a work in progress, so mind that everything might not be fully documented yet.

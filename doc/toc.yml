@@ -1,12 +1,10 @@
-- name: Welcome
+- name: Project Origin
   href: /
 - name: Concepts
   href: concept/
-- name: Technical solution
-  href: architecture/
 - name: Registry
   href: registry/
 - name: Wallet
   href: wallet/
 - name: Contribute
-  href: contribute/
+  href: contribute/welcome.md

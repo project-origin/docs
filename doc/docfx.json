@@ -7,22 +7,6 @@
           "toc.yml",
           "**/toc.yml"
         ]
-      },
-      {
-        "src": "../submodules/registry/doc",
-        "dest": "registry",
-        "files": [
-          "**/*.md",
-          "**/toc.yml"
-        ]
-      },
-      {
-        "src": "../submodules/wallet/doc",
-        "dest": "wallet",
-        "files": [
-          "**/*.md",
-          "**/toc.yml"
-        ]
       }
     ],
     "resource": [
@@ -32,20 +16,6 @@
         ],
         "exclude": [
           "_site/**"
-        ]
-      },
-      {
-        "src": "../submodules/registry/doc",
-        "dest": "registry",
-        "files": [
-          "**/*.{svg|png}"
-        ]
-      },
-      {
-        "src": "../submodules/wallet/doc",
-        "dest": "wallet",
-        "files": [
-          "**/*.{svg|png}"
         ]
       }
     ],

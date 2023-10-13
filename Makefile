@@ -18,6 +18,7 @@ help:
 	@awk -F '## ' '/^## /{desc=$$2}/^[a-zA-Z0-9][a-zA-Z0-9_-]+:/{gsub(/:.*/, "", $$1); printf "  ${formatting_command}%-20s ${formatting_desc}%s${formatting_none}\n", $$1, desc}' $(MAKEFILE_LIST) | sort
 	@printf "\n"
 
+## Build docfx site
 build:
 	docfx build doc/docfx.json
 

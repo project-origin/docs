@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Test docfx build
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
 
       - name: Install docfx
         run: dotnet tool install --global docfx --version 2.71.0

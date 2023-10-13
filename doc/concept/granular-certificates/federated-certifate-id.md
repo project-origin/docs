@@ -12,7 +12,7 @@ It consist of two parts
 
 [^1]: [Granular Certificate](readme.md)
 
-This combined key is ALWAYS the full identifier for a GC,
+This **Federated Certificate ID** is the unique identifier for a GC on the network,
 since a Uuid4 is not guaranteed unique, therefore the FID should always be used.
 
 ## Registry Name
@@ -32,8 +32,7 @@ GC lives on.
 
 The StreamID is the unique id of the certificate.
 
-The term StreamID comes from the underlying [verifiable event store](../../architecture/verifiable_event_store/README.md),
-where all changes (events) on a GC is stored in an event stream for the GC.
+The term StreamID comes from the underlying [streams](../registry/transactions.md#streams),
+where all transactions on a GC is stored in a stream for the GC.
 
-The StreamID is a Uuid4, and is the unique identifier for a GC across the entire
-federated network.
+The StreamID is a Uuid4, and is the unique identifier for a GC on a registry.
