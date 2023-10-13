@@ -14,6 +14,9 @@ jobs:
         with:
           submodules: true
 
+      - name: list files
+        run: ls -la -R ./doc
+
       - name: Install docfx
         run: dotnet tool install --global docfx --version 2.71.0
 
