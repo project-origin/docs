@@ -22,7 +22,7 @@ A GC consists of two parts:
   These attributes describe all the properties on the GC,
   like the [grid area](attributes.md#grid-area),
   [time period](attributes.md#period)
-  or which [asset](attributes.md#AssetId) the GC originates from.
+  or which [asset](attributes.md#assetid) the GC originates from.
 
 - A collection of [slices](#slices), when a GC is [issued](transactions/issue.md),
   it is created with 1 initial slice.

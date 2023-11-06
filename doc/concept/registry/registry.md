@@ -10,9 +10,9 @@ and provide a tamper-evident[^tamper] log of all changes to the data.
 [^tamper]: Tamper-evident ensures it is possible to detect if the data has been changed, but cannot prevent it.
 Any system can be tampered with, but the goal is to make it detectable and hold the hosting part accountable.
 
-Each registry can hold any number of [GCs](./granular-certificates/readme.md).
+Each registry can hold any number of [GCs](../granular-certificates/readme.md).
 It is up to the issuing body[^ib] to specify which registry to put a GC on
-at the time of issuance with the help of the [Federated Certificate ID](./granular-certificates/federated-certifate-id.md)
+at the time of issuance with the help of the [Federated Certificate ID](../granular-certificates/federated-certifate-id.md)
 
 [^ib]: The issuing body is the entity that has the legal right to issue GCs within a given area.
 
@@ -21,12 +21,12 @@ and reduce the need for distributed transactions.
 
 In practice this makes each registry the authority of what is the truth for the current state of a GCs held within it.
 
-Some transactions like [claim](./granular-certificates/transactions/claim.md)
+Some transactions like [claim](../granular-certificates/transactions/claim.md)
 does span multiple registries, but are performed as a distributed transaction using a saga pattern.
 
 ### Registry != Area
 
-GCs for the same [area](./granular-certificates/attributes.md#grid-area)
+GCs for the same [area](../granular-certificates/attributes.md#grid-area)
 can exist on different registries, as well as GCs for multiple areas can
 exists on the same registry.
 

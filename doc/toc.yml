@@ -1,5 +1,5 @@
-- name: Project Origin
-  href: /
+- name: Welcome
+  href: index.md
 - name: Concepts
   href: concept/
 - name: Registry
