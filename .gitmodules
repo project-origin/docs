@@ -1,6 +1,6 @@
 [submodule "submodules/wallet"]
 	path = submodules/wallet
-	url = https://github.com/project-origin/wallet.git
+	url = git@github.com:project-origin/wallet.git
 [submodule "submodules/registry"]
 	path = submodules/registry
-	url = https://github.com/project-origin/registry.git
+	url = git@github.com:project-origin/registry.git
