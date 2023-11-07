@@ -1,4 +1,4 @@
-# Withdraw
+# Withdraw transaction
 
 > [!NOTE]
 > The issue command is only valid for **Issuing bodies** for a given area.

@@ -1,0 +1,6 @@
+[submodule "submodules/wallet"]
+	path = submodules/wallet
+	url = git@github.com:project-origin/wallet.git
+[submodule "submodules/registry"]
+	path = submodules/registry
+	url = git@github.com:project-origin/registry.git

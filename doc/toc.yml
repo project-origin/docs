@@ -1,10 +1,10 @@
+- name: Welcome
+  href: index.md
 - name: Concepts
   href: concept/
-- name: Architecture
-  href: architecture/
-- name: Client API Documentation
-  href: client/
-- name: Server Registry
-  href: server/
+- name: Registry
+  href: registry/
+- name: Wallet
+  href: wallet/
 - name: Contribute
-  href: contribute/
+  href: contribute/welcome.md

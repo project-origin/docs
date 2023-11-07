@@ -8,7 +8,7 @@ formatting_command := \033[1;34m
 formatting_desc := \033[0;32m
 formatting_none := \033[0m
 
-.PHONY: help verify info lint clean build format test unit-test verify-chart doc-serve concordium-tests
+.PHONY: help build serve
 
 .DEFAULT_GOAL := help
 
@@ -18,7 +18,10 @@ help:
 	@awk -F '## ' '/^## /{desc=$$2}/^[a-zA-Z0-9][a-zA-Z0-9_-]+:/{gsub(/:.*/, "", $$1); printf "  ${formatting_command}%-20s ${formatting_desc}%s${formatting_none}\n", $$1, desc}' $(MAKEFILE_LIST) | sort
 	@printf "\n"
 
-## Generate docfx site and serve, navigate to 127.0.0.1:8080
-doc-serve:
+## Build docfx site
+build:
 	docfx build doc/docfx.json
+
+## Generate docfx site and serve, navigate to 127.0.0.1:8080
+serve: build
 	docfx serve doc/_site -n 127.0.0.1

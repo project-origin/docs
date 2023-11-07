@@ -11,9 +11,11 @@ jobs:
     name: Test docfx build
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: 'true'
 
       - name: Install docfx
-        run: dotnet tool install --global docfx --version 2.71.0
+        run: dotnet tool install --global docfx --version 2.73.0
 
       - name: Build Documentation
-        run: docfx build ./doc/docfx.json
+        run: make build

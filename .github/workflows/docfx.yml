@@ -24,22 +24,24 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy documentation to GitHub pages
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
 
       - name: Install docfx
-        run: dotnet tool install --global docfx --version 2.71.0
+        run: dotnet tool install --global docfx --version 2.73.0
 
       - name: Build Documentation
-        run: docfx build ./doc/docfx.json
+        run: make build
 
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: './doc/_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2

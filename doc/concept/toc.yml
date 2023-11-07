@@ -4,32 +4,32 @@
   items:
   - name: Granular Certificate
     href: granular-certificates/readme.md
-  - name: Certificate ID
+  - name: Federated Certificate ID
     href: granular-certificates/federated-certifate-id.md
   - name: Attributes
     href: granular-certificates/attributes.md
-  - name: Commands
+  - name: Transactions
     items:
     - name: Issue
-      href: granular-certificates/commands/issue.md
+      href: granular-certificates/transactions/issue.md
     - name: Transfer
-      href: granular-certificates/commands/transfer.md
+      href: granular-certificates/transactions/transfer.md
     - name: Slice
-      href: granular-certificates/commands/slice.md
+      href: granular-certificates/transactions/slice.md
     - name: Claim
-      href: granular-certificates/commands/claim.md
+      href: granular-certificates/transactions/claim.md
     - name: Withdraw
-      href: granular-certificates/commands/withdraw.md
+      href: granular-certificates/transactions/withdraw.md
     - name: Expire
-      href: granular-certificates/commands/expire.md
+      href: granular-certificates/transactions/expire.md
   - name: C# client example flow
     href: granular-certificates/example.md
 - name: Registries
   items:
   - name: What is a registry
-    href: registry.md
-  - name: Command and events
-    href: command-and-events.md
+    href: registry/registry.md
+  - name: Transactions, streams and blocks
+    href: registry/transactions.md
 - name: Unique proofs using tries/merkleproofs
   items:
   - name: Merkle Proof

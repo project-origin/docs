@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/dotnet:0.204.9-7.0
+FROM mcr.microsoft.com/devcontainers/dotnet:1.0.1-7.0-bullseye
 
 USER vscode
-RUN dotnet tool install --global docfx --version 2.71.0
+RUN dotnet tool install --global docfx --version 2.73.0
