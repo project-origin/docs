@@ -5,7 +5,8 @@
         "files": [
           "**/*.md",
           "toc.yml",
-          "**/toc.yml"
+          "**/toc.yml",
+          "**/*.swagger.json"
         ]
       }
     ],
