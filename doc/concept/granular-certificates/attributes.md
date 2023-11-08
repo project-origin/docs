@@ -19,17 +19,17 @@ Together they form a unique identifier for the certificate across all registries
 ### Grid Area
 
 The term *Grid area* was chosen instead of *Bidding zone*. The reason for this was to not tightly couple
-the system with the current bidding zones, as these areas could be based on other zonees at a later point in time.
+the system with the current bidding zones, as these areas could be based on other zones at a later point in time.
 
 Each Issuing body has a number of areas assigned to them, and only they are able to issue
-valid GCs for these areas, and only their private key is allowed to sign issuing transactions.
+valid GCs for these areas. Only their private key is allowed to sign issuing transactions.
 
 The grid area is used to enforce rules on the registry about how one can claim a production GC
 to a consumption GC.
 
 ### Period
 
-The period of a GC describes the period of time in between the energy was produced/consumed.
+The period of a GC describes the period of time in which the energy was produced/consumed (Note that this is a fixed settlement timeframe, inspired from settlement timing in the energy market and not a reprentation of the actual travel time of eg. electrons from production to consumption location).
 
 The period consists of two values, a **Start** and **End** timestamp in **unix format**.
 
