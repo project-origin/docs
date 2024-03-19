@@ -4,3 +4,9 @@
 [submodule "submodules/registry"]
 	path = submodules/registry
 	url = git@github.com:project-origin/registry.git
+[submodule "submodules/stamp"]
+	path = submodules/stamp
+	url = git@github.com:project-origin/stamp.git
+[submodule "submodules/verifier_electricity"]
+	path = submodules/verifier_electricity
+	url = git@github.com:project-origin/verifier_electricity.git

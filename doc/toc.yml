@@ -6,5 +6,9 @@
   href: registry/
 - name: Wallet
   href: wallet/
+- name: Stamp
+  href: stamp/
+- name: Electricity
+  href: verifier_electricity/
 - name: Contribute
   href: contribute/welcome.md
