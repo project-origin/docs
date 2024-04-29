@@ -2,13 +2,21 @@
   href: index.md
 - name: Concepts
   href: concept/
-- name: Registry
-  href: registry/
-- name: Wallet
-  href: wallet/
-- name: Stamp
-  href: stamp/
-- name: Electricity
-  href: verifier_electricity/
+- name: Projects
+  href: projects.md
+  items:
+  - name: Registry
+    href: registry/
+  - name: Wallet
+    href: wallet/
+  - name: Stamp
+    href: stamp/
+  - name: Electricity
+    href: verifier_electricity/
+- name: Quick start
+  href: quickstart/index.md
 - name: Contribute
-  href: contribute/welcome.md
+  href: contribute/index.md
+  items:
+  - name: How to create a release
+    href: contribute/create_release.md

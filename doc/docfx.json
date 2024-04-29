@@ -5,15 +5,15 @@
         "files": [
           "**/*.md",
           "toc.yml",
-          "**/toc.yml",
-          "**/*.swagger.json"
+          "**/toc.yml"
         ]
       }
     ],
     "resource": [
       {
         "files": [
-          "**/*.{svg|png}"
+          "**/*.{svg|png}",
+          "**/open-api.json"
         ],
         "exclude": [
           "_site/**"
