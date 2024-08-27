@@ -131,14 +131,14 @@ graph BT
   H1234 --> Root["Root = SHA256(H1234 + H5678)"]
   H5678 --> Root
 
-  style D3 fill:#666666
+  style D3 fill:#888888
   style H4 fill:#FF8C00
-  style H3 fill:#006400
-  style H34 fill:#006400
+  style H3 fill:#00A000
+  style H34 fill:#00A000
   style H12 fill:#FF8C00
-  style H1234 fill:#006400
+  style H1234 fill:#00A000
   style H5678 fill:#FF8C00
-  style Root fill:#006400
+  style Root fill:#00A000
 ```
 
 The graph above represents a Merkle tree with 8 data blocks (`D1` to `D8`). The client wants to verify the inclusion of `D3` (gray) in the Merkle tree using a Merkle Proof.

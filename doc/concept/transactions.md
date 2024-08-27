@@ -1,4 +1,4 @@
-# Transactions, streams and blocks
+# Transactions and streams
 
 Everything in Project Origin on a registry happens through a transaction, and every transaction relates to a specific stream on a registry.
 

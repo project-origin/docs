@@ -1,5 +1,3 @@
-- name: Overview
-  href: overview.md
 - name: Hitchikers guide to ProjectOrigin
   href: guide.md
   items:
@@ -13,14 +11,36 @@
           href: ./pedersen-commitment.md
         - name: Zero-Knowledge Proof
           href: ./zero-knowledge.md
+
     - name: GC and Transactions
       items:
       - name: Granular Certificates
         href: ./granular-certificates/readme.md
-      - name: Transactions
+        items:
+          - name: Federated Certificate ID
+            href: granular-certificates/federated-certifate-id.md
+          - name: Attributes
+            href: granular-certificates/attributes.md
+          - name: Transactions
+            items:
+            - name: Issue
+              href: granular-certificates/transactions/issue.md
+            - name: Transfer
+              href: granular-certificates/transactions/transfer.md
+            - name: Slice
+              href: granular-certificates/transactions/slice.md
+            - name: Claim
+              href: granular-certificates/transactions/claim.md
+            - name: Withdraw
+              href: granular-certificates/transactions/withdraw.md
+            - name: Expire
+              href: granular-certificates/transactions/expire.md
+
+      - name: Transactions and streams
         href: ./transactions.md
       - name: Verifier
         href: ./verifier.md
+
     - name: Merkle Trees and Blockchain
       items:
       - name: Merkle Trees
@@ -29,43 +49,17 @@
         href: ./blockchain.md
       - name: Registries
         href: ./registry.md
+      - name: Network
+        href: ./network.md
 
+    - name: Orchestration and Wallets
+      items:
+      - name: Orchestration
+        href: ./orchestration.md
+      - name: Wallet (Concept)
+        href: ./wallet.md
+      - name: WalletSystem
+        href: ./vault.md
 
-- name: Granular Certificate
-  items:
-  - name: Granular Certificate
-    href: granular-certificates/readme.md
-  - name: Federated Certificate ID
-    href: granular-certificates/federated-certifate-id.md
-  - name: Attributes
-    href: granular-certificates/attributes.md
-  - name: Transactions
-    items:
-    - name: Issue
-      href: granular-certificates/transactions/issue.md
-    - name: Transfer
-      href: granular-certificates/transactions/transfer.md
-    - name: Slice
-      href: granular-certificates/transactions/slice.md
-    - name: Claim
-      href: granular-certificates/transactions/claim.md
-    - name: Withdraw
-      href: granular-certificates/transactions/withdraw.md
-    - name: Expire
-      href: granular-certificates/transactions/expire.md
-  - name: C# client example flow
-    href: granular-certificates/example.md
-- name: Registries
-  items:
-  - name: What is a registry
-    href: registry/registry.md
-  - name: Transactions, streams and blocks
-    href: registry/transactions.md
-- name: Unique proofs using tries/merkleproofs
-  items:
-  - name: Merkle Trees and proofs
-    href: merkle-tree.md
-- name: Commitments
-  items:
-  - name: Pedersen Commitment
-    href: pedersen-commitments.md
+  # - name: C# client example flow
+  #   href: granular-certificates/example.md
