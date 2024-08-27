@@ -14,7 +14,7 @@ For a new certificate, the entity must be an issuing body.
 
 A registry then verifies the signature and the validity of the transaction and if everything is valid, it will be recorded on the stream.
 
-A [network](./registry/registry.md#federated-network) might set specific rules that apply for certificates in a network.
+A [network](./network.md) might set specific rules that apply for certificates in a network.
 For example, a network might require that all certificates must be issued containing a specific attribute or
 other rules that apply for transactions to be valid.
 

@@ -8,7 +8,7 @@ Project-Origin is a Open Source project to create a **federated solution** to ha
 
 ## Concepts and Terminology
 
-To get a better understanding of the concepts and terminology used in the project, please read the [concepts section](concept/overview.md).
+To get a better understanding of the concepts and terminology used in the project, please read the [guide](concept/guide.md).
 
 ## Work in Progress
 

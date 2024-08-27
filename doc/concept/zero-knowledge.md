@@ -16,7 +16,7 @@ In ProjectOrigin, zero-knowledge proofs are used to ensure that proofs to zero a
 This is used to ensure that the sum of the quantities in a certificate is correct, without revealing the actual values of the energies,
 and without revealing the randomness used in the commitments.
 
-More in depth information about how this is done can be found in the [ZKProof Specification](./zk-proof.md#sigma-proof).
+More in depth information about how this is done can be found in the [ZKProof Specification](./advanced/zk-proof.md#sum-proof).
 
 ## Range proof
 
@@ -25,7 +25,7 @@ This is used to ensure that the quantities in a certificate are non-negative, an
 If one could create negative quantities, a split of a certificate could be used to create energy out of nothing,
 therefore it is important to ensure that the quantities are non-negative.
 
-More in depth information about how this is done can be found in the [ZKProof Specification](./zk-proof.md#range-proof).
+More in depth information about how this is done can be found in the [ZKProof Specification](./advanced/zk-proof.md#range-proof).
 
 ## External resources
 

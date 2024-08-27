@@ -12,7 +12,7 @@ Any system can be tampered with, but the goal is to make it detectable and hold 
 
 ![registry](./registry.drawio.svg)
 
-Each registry can hold any number of [GCs](../granular-certificates/readme.md).
+Each registry can hold any number of [GCs](./granular-certificates/readme.md).
 It is up to the issuing body[^ib] to specify which registry to put a GC on
 at the time of issuance with the help of the [Federated Certificate ID](./granular-certificates/federated-certifate-id.md),
 where it is **identified** by a unique name.

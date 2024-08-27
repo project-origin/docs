@@ -48,7 +48,7 @@ Slice-0 [100] Slice-D
 
 The example above is a simplification.
 
-The quantity of each slice is encrypted using [Pedersen commitments](../../pedersen-commitments.md).
+The quantity of each slice is encrypted using [Pedersen commitments](../../pedersen-commitment.md).
 The Pedersen commitment enables one to prove the quantity stored without causing any changes to the data, and with no data leaking.
 
 A Pedersen commitment is also homomorphic, meaning that one can do operations on the "encrypted data",

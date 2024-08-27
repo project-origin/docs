@@ -11,7 +11,7 @@ A Granular Certificate has a series of attributes, currently split into two cate
 
 Is a [Federated Certificate ID](federated-certifate-id.md), it is the unique identifier for a certificate.
 It consist of two parts
-- RegistryName: identifier for which [registry](../registry/registry.md) holds the certificate.
+- RegistryName: identifier for which [registry](../registry.md) holds the certificate.
 - StreamId: Is the unique id of the certificate on the registry, it is a Uuid4.
 
 Together they form a unique identifier for the certificate across all registries.
@@ -46,7 +46,7 @@ the values would contain the following:
 
 The quantity attribute describes a whole number in **Wh** of the energy flowing through the meter in the period specified.
 
-To ensure the privacy and hide the quantity, the value is hidden using a [Pedersen Commitment](../pedersen-commitments.md).
+To ensure the privacy and hide the quantity, the value is hidden using a [Pedersen Commitment](../pedersen-commitment.md).
 
 ---
 

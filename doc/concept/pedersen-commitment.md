@@ -62,7 +62,7 @@ $$C´= C_{\text{certificateA}} ~/~ C_{\text{certificateB}}$$
 
 ### Additional reading
 
-[Here](../advanced/pedersen-commitment-extended.md) is some additional info about the Pedersen commitment scheme.
+[Here](./advanced/pedersen-commitment-extended.md) is some additional info about the Pedersen commitment scheme.
 
 A thorugh description of the Pedersen commitment scheme can be found in the [Pedersen Commitment Scheme](https://crypto.stackexchange.com/questions/64437/what-is-a-pedersen-commitment) article on the crypto.stackexchange forum.
 

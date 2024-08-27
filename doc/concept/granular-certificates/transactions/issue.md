@@ -17,6 +17,6 @@ The following data is required to issue a new Granular Certificate:
 | **type** | The type which can be either production or consumption. |
 | **period** | The [period](../attributes.md#period) where the certificate relates to. |
 | **grid_area** | The [grid area](../attributes.md#grid-area) where the certificate relates to. |
-| **quantity_commitment** | Which holds the quantity of the certificate in a [Pedersen commitment](../../pedersen-commitments.md). |
+| **quantity_commitment** | Which holds the quantity of the certificate in a [Pedersen commitment](../../pedersen-commitment.md). |
 | **owner_public_key** | The public key of the owner of the certificate. |
 | **attributes** | Additional [secondary attributes](../attributes.md#secondary-attributes) of the certificate. |
