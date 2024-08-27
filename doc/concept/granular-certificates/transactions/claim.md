@@ -39,7 +39,7 @@ ConSlice-B [200] Consumption
 
 ## Privacy and Zero Knowledge proofs
 
-As in the [slice command](slice.md#privacy-and-mathematics), all quantities are hidden using [Pedersen Commitments](../../pedersen-commitments.md) and Zero Knowledge proofs.
+As in the [slice command](slice.md#privacy-and-mathematics), all quantities are hidden using [Pedersen Commitments](../../pedersen-commitment.md) and Zero Knowledge proofs.
 
 The Zero Knowledge proof can prove that the two pedersen-commitments in each slice are equal without revealing the actual numbers.
 

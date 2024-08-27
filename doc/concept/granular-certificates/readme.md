@@ -59,9 +59,10 @@ A slice can be uniquely identified by its commitment,
 
 A slice has a specific life-cycle. When the slice is created, it becomes **active**.
 
-When a slice changes state, the state is stored on the slice as an event.
-
+When the owner wants to perform any action on the slice, they need to create a [transaction](../transactions.md#transactions).
 Note that most transactions are final, in there is no way to reverse them once performed.
+
+Below is a diagram of the life-cycle of a slice given transactions that can be performed on it.
 
 ```mermaid
 stateDiagram-v2
@@ -70,8 +71,6 @@ stateDiagram-v2
     Active --> Active: Transfer
     Active --> Allocated: Allocate
     Allocated --> Claimed: Claim
-    Active --> Withdrawn: Withdraw
-    Active --> Expired: Expire (automatically)
 
     note right of Removed
         Removed slices are <b>not</b>
@@ -86,9 +85,7 @@ stateDiagram-v2
     end note
 ```
 
-- [Issue command](transactions/issue.md): Used by an **Issuing Body** to issue a new GC.
-- [Transfer command](transactions/transfer.md): Transfers the ownership of an existing slice to a new owner.
-- [Slice command](transactions/slice.md): Enables the owner to create any number of new slices from and exsting slice.
-- [Claim command](transactions/claim.md): Claim a production slice to a consumption slice of same quantity.
-- [Withdraw](transactions/withdraw.md): Withdraw a GC.
-- [Expire](transactions/expire.md): Expires old slices.
+- [Issue transaction](transactions/issue.md): Used by an **Issuing Body** to issue a new GC.
+- [Transfer transaction](transactions/transfer.md): Transfers the ownership of an existing slice to a new owner.
+- [Slice transaction](transactions/slice.md): Enables the owner to create any number of new slices from an exsting slice.
+- [Allocate and claim transaction](transactions/claim.md): Claim a production slice to a consumption slice of same quantity.
