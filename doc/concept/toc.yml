@@ -1,5 +1,36 @@
 - name: Overview
   href: overview.md
+- name: Hitchikers guide to ProjectOrigin
+  href: guide.md
+  items:
+    - name: Why
+      href: overview.md
+    - name: Cryptography
+      items:
+        - name: Signature
+          href: ./signature.md
+        - name: Pedersen Commitment
+          href: ./pedersen-commitment.md
+        - name: Zero-Knowledge Proof
+          href: ./zero-knowledge.md
+    - name: GC and Transactions
+      items:
+      - name: Granular Certificates
+        href: ./granular-certificates/readme.md
+      - name: Transactions
+        href: ./transactions.md
+      - name: Verifier
+        href: ./verifier.md
+    - name: Merkle Trees and Blockchain
+      items:
+      - name: Merkle Trees
+        href: ./merkle-tree.md
+      - name: Blockchain
+        href: ./blockchain.md
+      - name: Registries
+        href: ./registry.md
+
+
 - name: Granular Certificate
   items:
   - name: Granular Certificate
@@ -32,8 +63,8 @@
     href: registry/transactions.md
 - name: Unique proofs using tries/merkleproofs
   items:
-  - name: Merkle Proof
-    href: unique-proofs-using-tries-merkleproofs.md
+  - name: Merkle Trees and proofs
+    href: merkle-tree.md
 - name: Commitments
   items:
   - name: Pedersen Commitment
