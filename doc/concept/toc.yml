@@ -54,12 +54,23 @@
 
     - name: Orchestration and Wallets
       items:
-      - name: Orchestration
-        href: ./orchestration.md
+      - name: Hierarchical Deterministic Keys
+        href: ./hd-keys.md
       - name: Wallet (Concept)
         href: ./wallet.md
-      - name: WalletSystem
+      - name: Orchestration
+        href: ./orchestration.md
+      - name: Vault
         href: ./vault.md
 
-  # - name: C# client example flow
-  #   href: granular-certificates/example.md
+    - name: Other systems
+      items:
+      - name: Stamp
+        href: ./stamp.md
+      - name: Chronicler
+        href: ./chronicler.md
+
+    - name: System Overview
+      href: ./system-overview.md
+    - name: Contributing
+      href: ../contribute/

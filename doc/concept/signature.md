@@ -12,7 +12,7 @@ The recipient can use the public key to verify the signature and ensure that the
 
 Below is an example of it from wikipedia, where Alice signs a message with her private key and sends it to Bob.
 
-![Signature](https://upload.wikimedia.org/wikipedia/commons/a/a7/Private_key_signing.png)
+![Signature](signature.png)
 </br> FlippyFlink, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
 
 ## Algorithms used in ProjectOrigin

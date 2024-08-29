@@ -16,7 +16,4 @@
 - name: Quick start
   href: quickstart/index.md
 - name: Contribute
-  href: contribute/index.md
-  items:
-  - name: How to create a release
-    href: contribute/create_release.md
+  href: contribute/

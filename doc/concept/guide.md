@@ -39,11 +39,19 @@ Now that we know how to ensure tamper-evidence, let's go through how to manage a
 - [Hierarchical Deterministic Keys (HD Keys)](./hd-keys.md) - A way to generate a sequence of public keys from a single master private key.
 - [Wallet (Concept)](./wallet.md) - A **concept** that holds the private keys, users data and signs transactions.
 - [Orchestration](./orchestration.md) - A way to manage and coordinate the execution of complex transactions across multiple streams.
-- [Vault* (WalletSystem)]() - A **system** that hosted system that holds many users wallets.
+- [Vault](./vault.md) - A **system** that hosted system that holds many users `wallets`.
 
-## Additional functionality
+## Other systems
 
 The ProjectOrigin system has additional functionality that can be used to extend the system.
 
-- [Stamp]() - A **system** to simplify the process of issuing certificates.
-- [Chronicler]() - A **system** for collecting claim information in a distributed and privacy-preserving way.
+- [Stamp](./stamp.md) - A **system** to simplify the process of issuing certificates.
+- [Chronicler](./chronicler.md) - A **system** for collecting claim information in a distributed and privacy-preserving way.
+
+## Summary
+
+- [System Overview](./system-overview.md) - A summary of the ProjectOrigin system.
+
+## How to contribute
+
+- [Contributing](../contribute/) - Go here to learn how to contribute to ProjectOrigin.
