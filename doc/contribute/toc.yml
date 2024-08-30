@@ -4,5 +4,7 @@
   href: ./org_repos.md
 - name: Repository structure
   href: ./repo_structure.md
+- name: Best practices
+  href: ./code_practices.md
 - name: How to create a release
   href: ./create_release.md

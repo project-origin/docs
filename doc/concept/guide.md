@@ -40,6 +40,7 @@ Now that we know how to ensure tamper-evidence, let's go through how to manage a
 - [Wallet (Concept)](./wallet.md) - A **concept** that holds the private keys, users data and signs transactions.
 - [Orchestration](./orchestration.md) - A way to manage and coordinate the execution of complex transactions across multiple streams.
 - [Vault](./vault.md) - A **system** that hosted system that holds many users `wallets`.
+- [Receive Slice](./receive-slice.md) - How the slices are transferred from one wallet to another.
 
 ## Other systems
 
@@ -47,6 +48,7 @@ The ProjectOrigin system has additional functionality that can be used to extend
 
 - [Stamp](./stamp.md) - A **system** to simplify the process of issuing certificates.
 - [Chronicler](./chronicler.md) - A **system** for collecting claim information in a distributed and privacy-preserving way.
+- [Concordium](./concordium.md) - A **external system** that provides a immutable log.
 
 ## Summary
 

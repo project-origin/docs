@@ -5,14 +5,16 @@
 - name: Projects
   href: projects.md
   items:
+  - name: Chronicler
+    href: chronicler/
+  - name: Electricity Verifier
+    href: verifier_electricity/
   - name: Registry
     href: registry/
-  - name: Wallet
-    href: wallet/
   - name: Stamp
     href: stamp/
-  - name: Electricity
-    href: verifier_electricity/
+  - name: Vault
+    href: wallet/
 - name: Quick start
   href: quickstart/index.md
 - name: Contribute

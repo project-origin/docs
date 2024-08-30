@@ -69,8 +69,11 @@
         href: ./stamp.md
       - name: Chronicler
         href: ./chronicler.md
+      - name: Concordium
+        href: ./concordium.md
 
     - name: System Overview
       href: ./system-overview.md
+
     - name: Contributing
       href: ../contribute/

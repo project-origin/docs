@@ -17,6 +17,25 @@ The Chronicler feature can be enabled on a given gridArea in the [network config
 
 This signature must then be included in the transaction to the registry, and the registry will then verify the signature before accepting the transaction.
 
+```mermaid
+sequenceDiagram
+    actor owner
+    participant wallet
+    participant chronicler
+    participant registry
+    owner->>+wallet: Create claim
+    wallet->>wallet: create commitment
+    wallet->>+chronicler: send commitment info and FID
+    chronicler->>chronicler: store commitment info and FID
+    chronicler->>-wallet: return signature
+    wallet->>+registry: send claim with signature
+    deactivate wallet
+    registry->>registry: verify transaction and signature
+    deactivate registry
+```
+
+The chronicler will then continually process registries and collect the information based on the claim intents needed for the area to provide statistics on how much has been claimed within an area in a verifiable and trustable way without compromising the privacy of the users.
+
 ## More information
 
 Can be found in the [Chronicler](../chronicler/index.md) documentation.

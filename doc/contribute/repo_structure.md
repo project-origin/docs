@@ -23,6 +23,11 @@ Both nuget, github actions, protobuf and docker images are updated by the bot.
 
 Renovate was chosen since it was able to configured to update the dependencies in a more dynamic way.
 
+It will automatically create pull requests to update the dependencies in the repositories,
+and if the pull request passes the pipeline, it will automatically merge the pull request.
+
+It will `NOT` automatically create new release of the project, that is still up to the developer to do,
+but could be automated in the future if one wanted to.
 
 ## Repository structures
 
