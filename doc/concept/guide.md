@@ -56,4 +56,4 @@ The ProjectOrigin system has additional functionality that can be used to extend
 
 ## How to contribute
 
-- [Contributing](../contribute/) - Go here to learn how to contribute to ProjectOrigin.
+- [Contributing](../contribute/index.md) - Go here to learn how to contribute to ProjectOrigin.
