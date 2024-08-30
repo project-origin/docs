@@ -10,3 +10,6 @@
 [submodule "submodules/verifier_electricity"]
 	path = submodules/verifier_electricity
 	url = git@github.com:project-origin/verifier_electricity.git
+[submodule "submodules/chronicler"]
+	path = submodules/chronicler
+	url = git@github.com:project-origin/chronicler.git

@@ -1,4 +1,4 @@
-# Welcome to contribute
+# How to contribute
 
 Everyone is welcome to contribute to this project.
 
