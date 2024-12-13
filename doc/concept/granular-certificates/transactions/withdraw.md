@@ -3,10 +3,6 @@
 > [!NOTE]
 > The issue command is only valid for **Issuing bodies** for a given area.
 
-> [!IMPORTANT]
-> This command has **NOT** been implemented yet.
+Withdraw is a command, which withdraws the entire certificate. This means that no transaction can be performed on the certificate and that existing climas are unclaimed. When this happens, Stamp opens up for a new certificate can be issued in the same timespan from the same metering point id.
 
-There is a number of outstanding issues to discuss in terms of this command's functionality.
-
-- What should happen with claims that uses a certificate?
-- It there a period within which it is allowed?
+You can read more about how withdraw works [here](../stamp/flows/withdraw.md).
