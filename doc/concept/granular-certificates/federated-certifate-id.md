@@ -7,13 +7,14 @@ uid: federated_certificate_id
 The **Federated Certificate ID** (FID) it is the unique identifier for a certificate.
 It consist of two parts
 
-- RegistryName:  identifier for which [registry](../registry.md) holds the certificate[^1].
-- StreamId: Is the unique id of the certificate on the registry, it is a Uuid4.
+- RegistryName: An identifier for which [registry](../registry.md) holds the certificate[^1].
+- StreamId: The identifier for the certificate within that registry, as a UUID4.
 
 [^1]: [Granular Certificate](readme.md)
 
-This **Federated Certificate ID** is the unique identifier for a GC on the network,
-since a Uuid4 is not guaranteed unique, therefore the FID should always be used.
+While UUID4s are designed to be practically unique, they are not mathematically guaranteed to be unique.
+
+Because of this, the **Federated Certificate ID** (FID) (which combines the RegistryName with the StreamID) should always be used as the definitive unique identifier for a certificate across all registries.
 
 ## Registry Name
 
@@ -30,9 +31,11 @@ GC lives on.
 
 ## Stream ID
 
-The StreamID is the unique id of the certificate.
+The StreamID is the identifier for a certificate, within a registry.
 
 The term StreamID comes from the underlying [streams](../transactions.md#streams),
 where all transactions on a GC is stored in a stream for the GC.
 
-The StreamID is a Uuid4, and is the unique identifier for a GC on a registry.
+The StreamID is a Uuid4, which provides a very high probability of uniqueness within a registry.
+
+However, because a UUID4 is generated randomly and cannot be guaranteed to be unique in absolute terms, it is used in conjunction with the RegistryName to form the globally unique FID.
